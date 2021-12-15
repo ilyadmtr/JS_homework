@@ -1,3 +1,4 @@
+console.log("test")
 // 1
 let namePrompt =  prompt('Как вас зовут?');
 
