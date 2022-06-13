@@ -1,0 +1,11 @@
+*{
+    background: antiquewhite;
+    list-style: none;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+}
+#comments{
+    padding-left: 30px;
+}
