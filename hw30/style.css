@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-content{
+    display: flex;
+    justify-content: space-between;
+}
+#signUp{
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+}
+#root{
+    background: antiquewhite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    color: red;
+}
+input{
+    width: 100%;
+}
+#signUpBtn{
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+h3{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    width: 45%;
+}
+.right-side{
+    width: 45%;
+}
