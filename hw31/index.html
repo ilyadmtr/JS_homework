@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form_wrapper">
+<form id="color" name="colorForm" method="PUT" action="">
+    <h3>Create new color</h3>
+    <br>
+    <label>
+        <div class="text-content">
+            <span>Color: </span> <span id="errorColor" class="error"></span>
+        </div>
+        <input type="text" name="color" id="colorInput">
+    </label>
+    <br>
+    <label>
+        <div class="text-content">
+            <span>Type: </span> <span id="errorType" class="error"></span>
+        </div>
+        <select name="type_select" id="typeSelect">
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        <div class="text-content">
+            <span>Code: </span> <span id="errorCode" class="error"></span>
+        </div>
+        <input type="text" name="code" id="codeInput">
+    </label>
+    <br>
+    <label>
+    <input type="submit" id="submit">
+</label>
+</form>
+</div>
+
+
+<h3>All colors: </h3>
+<div id="colorsBox">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

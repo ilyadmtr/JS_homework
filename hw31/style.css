@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-content{
+    display: flex;
+    justify-content: space-between;
+}
+#color{
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+}
+body{
+    background: antiquewhite;
+    height: 100vh;
+}
+.form_wrapper{
+    height: 70% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    color: red;
+}
+input{
+    width: 100%;
+}
+h3{
+    text-align: center;
+}
+.wrapper{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inside{
+    width: 70%;
+    height:80px;
+    background: azure;
+}
+#colorsBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
