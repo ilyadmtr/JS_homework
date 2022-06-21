@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 33</title>
+</head>
+<body>
+<div>
+    <video width="400" height="300" id="video-player" poster="image.jpg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/ogv">
+    </video>
+</div>
+<div>
+    <progress max=100 value="0" id="progress"></progress>
+</div>
+<div>
+    <p id="out">0</p>
+</div>
+<div>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Stop</button>
+    <button id="faster">Быстрее</button>
+    <button id="slowly">Медленнее</button>
+    <button id="normal">Норма</button>
+</div>
+<div>
+    <input type="range" id="volume" min=0 max=100>volume
+</div>
+<script src="index.js"></script>
+</body>
+</html>
