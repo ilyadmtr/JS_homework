@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="titleWeb"></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content">
+    <img id="film">
+    <div id="text_block">
+        <h1 id="title"></h1>
+        <p id="date"></p>
+        <p id="genre"></p>
+        <p id="text"></p>
+        <p id="country"></p>
+    </div>
+</div>
+<script>
+    let obj = JSON.parse(document.cookie);
+    film.src = obj.Poster
+    title.innerText = obj.Title;
+    titleWeb.innerText = obj.Title;
+    date.innerText = obj.Released;
+    genre.innerText = obj.Genre;
+    text.innerText = obj.Plot;
+    country.innerText = obj.Country;
+
+    console.log(JSON.parse(document.cookie))
+
+</script>
+</body>
+</html>
