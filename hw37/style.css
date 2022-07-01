@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: darkgreen;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    background: aliceblue;
+    width: 80px;
+    height: 100vh;
+    padding: 15px;
+}
+.item_icon{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+.item_icon img{
+    width: 50px;
+    margin-right: 15px;
+}
+.item_icon p{
+    position: absolute;
+    opacity: 0;
+    left: 70px;
+}

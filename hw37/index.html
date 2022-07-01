@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 37</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <p class="title">MENU</p>
+    <div class="icons">
+        <div class="item_icon">
+            <img src="./pencil-2366.png"/>
+            <p>EDIT</p>
+        </div>
+        <div class="item_icon">
+            <img src="./heart.png"/>
+            <p>FAVORITES</p>
+        </div>
+        <div class="item_icon">
+            <img src="./ешьу.png"/>
+            <p>HISTORY</p>
+        </div>
+        <div class="item_icon">
+            <img src="./1f6e1.png"/>
+            <p>SECURITY</p>
+        </div>
+        <div class="item_icon">
+            <img src="./image_processing20200510-5727-1tpdywz.png"/>
+            <p>SETTINGS</p>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        $('.navbar').hover(
+            // function(){
+            //     $('.item_icon > p').animate({opacity:1});
+            // },
+            // function(){
+            //     $('.item_icon > p').animate({opacity:0});
+            // },
+            function(){
+                $('.navbar').animate({width:'300px'});
+            },
+        function(){
+            $('.navbar').animate({width:'80px'});
+        }
+        );
+        $('.navbar').hover(
+            function(){
+                $('.item_icon > p').animate({opacity:1});
+            },
+            function(){
+                $('.item_icon > p').animate({opacity:0});
+            }
+        )
+    });
+</script>
+</body>
+</html>
