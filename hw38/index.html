@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 38</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="popup">
+        <form action="#" name="loginization" id="form">
+            <h2>Member Login</h2>
+            <input placeholder="USERNAME" name="name" type="text" id="input_name"/>
+            <input placeholder="PASSWORD" name="password" type="password" id="input_password"/>
+            <input value="submit" type="submit" id="input_submit"/>
+        </form>
+        <span id="error"></span>
+    </div>
+    <div class="overlay">
+</div>
+
+<button class="btn-register">Register form</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+    $(function() {
+        console.log("aa")
+        $("#form").on('submit', function (e) {
+            e.preventDefault();
+            if ($('#input_name').val() !== "" && $('#input_password').val() !== "") {
+                $('.overlay').removeClass('active');
+                $('.popup').removeClass('active');
+                $('#error').text('');
+                $('#input_name').val('');
+                $('#input_password').val('')
+            } else {
+                $('#error').text('Not correct value');
+            }
+        })
+        $('.btn-register').on('click', function (){
+            $('.overlay').addClass('active');
+            $('.popup').addClass('active');
+        })
+        $('.overlay').on('click', function (){
+            $('.overlay').removeClass('active');
+            $('.popup').removeClass('active');
+            $('#error').text('');
+            $('#input_name').val('');
+            $('#input_password').val('')
+        })
+    })
+</script>
+</body>
+</html>
