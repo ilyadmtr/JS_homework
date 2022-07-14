@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 39</title>
+    <style>
+        #root{
+            width: 325px;
+        }
+        span{
+            width: 45px;
+        }
+        .header{
+            text-align: center;
+        }
+        .container div{
+            display: flex;
+            justify-content: space-between;
+            /*width: 275px;*/
+            margin-bottom: 10px;
+        }
+        .container{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+    const data = JSON.parse(`{
+    "header": "User rating",
+    "maxvalue": 254,
+    "data": [
+      {
+        "title": "5 stars",
+        "value": 150
+      },
+      {
+        "title": "4 stars",
+        "value": 63
+      },
+      {
+        "title": "3 stars",
+        "value": 15
+      },
+      {
+        "title": "2 stars",
+        "value": 6
+      },
+      {
+        "title": "1 star",
+        "value": 20
+      }
+    ]
+  }`)
+
+    function getRandomColor(){
+        let r = Math.random() * 255;
+        let g = Math.random() * 255;
+        let b = Math.random() * 255;
+
+        while(r+g+b < 255 || r+g+b > 600){
+            r = Math.random()*255;
+            g = Math.random()*255;
+            b = Math.random()*255;
+        }
+
+        return `rgb(${r},${g}, ${b})`
+    }
+
+    console.log(data.maxvalue)
+
+    $('#root').append($(`<h3 class="header">${data.header}</h3>`))
+    $('#root').append($(`<div class="container"></div>`))
+    for(let el of data.data){
+    $('.container').append(`<div><span>${el.title}</span><div class="full_rating"><div class="part_rating" style="height:20px; width: ${+el.value*100/+data.maxvalue}px; background: ${getRandomColor()}"></div></div><span>${el.value}</span></div>`)
+    }
+    $('.full_rating').css({
+        'height': '20px',
+        'width': '200px',
+        'background': 'lightgrey'
+    })
+    $('.full_rating').css({
+        'height': '20px',
+        'width': '200px',
+        'background': 'lightgrey'
+    })
+</script>
+</body>
+</html>
