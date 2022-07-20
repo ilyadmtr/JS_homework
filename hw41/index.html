@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 41</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: cadetblue;
+        }
+        #form{
+            width: 400px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background: #fff;
+            padding: 30px;
+        }
+        input, select{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<form name="form" id="form">
+    <div>
+        <label>Name: </label>
+    <input type="text" name="name_user">
+    </div>
+    <div>
+        <label>Year: </label>
+        <input type="number" name="year_user" value="1900">
+    </div>
+    <div>
+        <label>Color eyes: </label>
+        <select name="eyes_user">
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Grey">Grey</option>
+            <option value="Blue">Blue</option>
+        </select>
+    </div>
+    <div>
+        <label>Color hairs: </label>
+        <select name="hair_user">
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+            <option value="White">White</option>
+            <option value="Red">Red</option>
+            <option value="Light">Light</option>
+        </select>
+    </div>
+    <div>
+        <label>Growth: </label>
+        <input type="number" name="growth_user">
+    </div>
+    <div>
+        <label>Weight: </label>
+        <input type="number" name="weight_user">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+    <span id="error"></span>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
