@@ -1,0 +1,17 @@
+{
+  "name": "hw42",
+  "version": "1.0.0",
+  "description": "something unreal",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "author": "Ilya Dmytrenko",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}
