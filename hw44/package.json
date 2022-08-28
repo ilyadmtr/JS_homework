@@ -9,10 +9,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "babel": "^6.23.0",
-    "gulp": "^4.0.2",
-    "react": "^18.2.0"
-  }
+  "license": "ISC"
 }
