@@ -1,0 +1,16 @@
+.content{
+  width: 70%;
+  margin: 40px auto;
+  border: 1px solid lightblue;
+  background: lavender;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+}
+.biography{
+  width: 60%;
+}
+.avatar{
+  width: 400px;
+  border-radius: 15px;
+}
