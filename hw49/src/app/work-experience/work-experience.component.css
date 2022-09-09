@@ -1,0 +1,19 @@
+.experiences{
+  margin-top: 30px;
+  border: 3px solid cadetblue;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.experiences ul{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.experiences li{
+  background: chocolate;
+  padding: 15px;
+  border-radius: 5px;
+}

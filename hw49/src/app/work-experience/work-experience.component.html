@@ -1,0 +1,6 @@
+<div [ngClass]="'experiences'">
+  <h2>Experience: </h2>
+  <ul [ngStyle]="{'list-style':'none'}">
+    <li *ngFor="let ex of info.experience">{{ex.company | uppercase}} - {{ex.time}}</li>
+  </ul>
+</div>

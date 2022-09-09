@@ -1,0 +1,10 @@
+<div [ngClass]="'mainInfo'">
+  <img [attr.src]="info.photoURL" [ngClass]="'image'"/>
+  <div [ngClass]="'textInfo'">
+    <p>{{info.name}} {{info.surname}}</p>
+    <p>Phone: {{info.phoneNum}}</p>
+    <p>Email: {{info.email}}</p>
+    <p>Date of birth: {{info.dateOfBirth | date: "dd/MM/yy"}}</p>
+    <p>City: {{info.city}}</p>
+  </div>
+</div>

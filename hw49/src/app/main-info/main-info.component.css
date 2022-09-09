@@ -1,0 +1,17 @@
+.mainInfo{
+  background: cadetblue;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image{
+  border-radius: 15px;
+  margin-right: 50px;
+}
+.textInfo{
+  border-radius: 15px;
+  background: white;
+  padding: 30px;
+}

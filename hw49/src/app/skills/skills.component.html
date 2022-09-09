@@ -1,0 +1,6 @@
+<div [ngClass]="'skills'">
+  <h2>Skills: </h2>
+  <ul [ngStyle]="{'list-style':'none'}">
+    <li *ngFor="let sk of info.skills">#{{sk | uppercase}}</li>
+  </ul>
+</div>
