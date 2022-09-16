@@ -1,0 +1,26 @@
+.wrapper{
+  background: cadetblue;
+  padding: 40px;
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+}
+.text_info{
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.images img{
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  width: 600px;
+  margin-bottom: 50px;
+}
