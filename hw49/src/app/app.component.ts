@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {RESUME_MOCK} from "./shared/ResumeMock";
+import {TResume} from "./shared/TResume";
+import {GetInfoService} from "../services/get-info.service";
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,8 @@ import {RESUME_MOCK} from "./shared/ResumeMock";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-resume = RESUME_MOCK;
-
+resume:TResume;
+constructor(private getInfoService: GetInfoService) {
+  this.resume = this.getInfoService.resumeMock;
+}
 }
