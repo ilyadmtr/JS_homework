@@ -1,0 +1,5 @@
+<ul [ngClass]="'gallery'">
+  <li *ngFor="let image of images">
+    <img [src]="image.URL" alt="art picture" (click)="openDialog(image)">
+  </li>
+</ul>
