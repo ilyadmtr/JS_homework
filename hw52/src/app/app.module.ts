@@ -7,15 +7,18 @@ import {RouterLinkWithHref, RouterModule, RouterOutlet, Routes} from "@angular/r
 import { HomePageComponent } from './home-page/home-page.component';
 import {FormsModule} from "@angular/forms";
 import { Task2Component } from './task2/task2.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
 import {HttpService} from "./services/http.service";
 import {HttpPostService} from "./services/http-post.service";
+import { Task3Component } from './task3/task3.component';
+import {HttpGetFilmService} from "./services/searh-film.service";
 
 
 const routers: Routes = [
   {path: '', component: HomePageComponent},
   {path: "task1", component: Task1Component},
-  {path: 'task2', component: Task2Component}
+  {path: 'task2', component: Task2Component},
+  {path: 'task3', component: Task3Component}
 ]
 
 @NgModule({
@@ -23,7 +26,8 @@ const routers: Routes = [
     AppComponent,
     Task1Component,
     Task2Component,
-    HomePageComponent
+    HomePageComponent,
+    Task3Component
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,8 @@ const routers: Routes = [
   ],
   providers: [
     HttpService,
-    HttpPostService
+    HttpPostService,
+    HttpGetFilmService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,26 @@
+<h1>Search films</h1>
+<div class="searchFilm">
+  <form>
+    <div id="divInput">
+      <input type="text" placeholder="Name" [ngModelOptions]="{standalone:true}" ngModel #name="ngModel" required>
+      <input type="text" placeholder="Year" [ngModelOptions]="{standalone:true}" ngModel #year="ngModel" required>
+      <select id="select" [ngModelOptions]="{standalone:true}" ngModel #select = "ngModel">
+        <option>movie</option>
+        <option>series</option>
+        <option>episode</option>
+      </select>
+      <button id="button" type="reset" (click)="search(name.value, year.value, select.value)">
+        Search
+      </button>
+    </div>
+  </form>
+</div>
+<div id="films">
+  <div *ngIf="done" class="film">
+    <img src="{{film['Poster']}}" alt="poster">
+    <p>Title: {{film['Title']}}</p>
+    <p>Actors: {{film['Actors']}}</p>
+    <p>Year: {{film['Year']}}</p>
+    <p>Genre: {{film['Genre']}}</p>
+  </div>
+</div>
