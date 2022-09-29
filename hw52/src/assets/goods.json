@@ -1,0 +1,22 @@
+[
+  {
+    "name": "apple",
+    "count": 3,
+    "mcalc": "kg"
+  },
+  {
+    "name": "banan",
+    "count": 2,
+    "mcalc": "kg"
+  },
+  {
+    "name": "milk",
+    "count": 3,
+    "mcalc": "litr"
+  },
+  {
+  "name": "rice",
+  "count": 3,
+  "mcalc": "kg"
+}
+]
