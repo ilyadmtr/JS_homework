@@ -1,11 +1,15 @@
 import './App.css';
+import React from "react";
+import Task2 from "./components/task2";
+import Task3 from "./components/task3";
 
 function App() {
-  let currentTime = new Date().toLocaleTimeString();
+    const Task1 = React.createElement('div', {className: 'task1'}, 'Task1');
   return (
-   <div>Hello world!
-   <h1>Current time {currentTime}</h1>
-       <button className='btn btn-success'>Hi</button>
+   <div>
+       <h1>{Task1}</h1>
+       <Task2></Task2>
+       <Task3></Task3>
    </div>
   );
 }
