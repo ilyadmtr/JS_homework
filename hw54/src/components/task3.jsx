@@ -9,14 +9,14 @@ const Task3 = () => {
     }
     return (
         <div>
-           <h1>Task 3</h1>
-            <p>Name of city: {info.city}</p>
-            <p>Name of country: {info.country}</p>
-            <p>Year of independence: {info.year}</p>
-            <ul>
-                <li><img src={info.photos[0]} alt="Photo Kyiv"/></li>
-                <li><img src={info.photos[1]} alt="Photo Kyiv"/></li>
-            </ul>
+           {/*<h1>Task 3</h1>*/}
+           {/* <p>Name of city: {info.city}</p>*/}
+           {/* <p>Name of country: {info.country}</p>*/}
+           {/* <p>Year of independence: {info.year}</p>*/}
+           {/* <ul>*/}
+           {/*     <li><img src={info.photos[0]} alt="Photo Kyiv"/></li>*/}
+           {/*     <li><img src={info.photos[1]} alt="Photo Kyiv"/></li>*/}
+           {/* </ul>*/}
         </div>
     );
 };
