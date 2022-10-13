@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.css';
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Animal from "./Animal";
+import {useForm} from "react-hook-form";
 
 const Task2 = () => {
     const info = {
@@ -24,17 +25,27 @@ const Task2 = () => {
          color: 'brown'
         }
     }
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    const [nameVal, setNameVal] = useState(info.name);
+    const [phoneVal, setPhoneVal] = useState(info.number);
+    const [emailVal, setEmailVal] = useState(info.email);
+
     return (
-        <div>
+        <form onSubmit={handleSubmit(data=>console.log(data))}>
             <img src={info.photoURL} alt="avatar" className='avatar'/>
-            <h1>Task 2</h1>
-            <p>Name: {info.name}</p>
-            <p>Phonenumber: {info.number}</p>
-            <p>Email: {info.email}</p>
+            <input {...register('name', {required: true, maxLength: 15})} type={'text'} placeholder='Name...' onChange={(e)=>setNameVal(e.target.value)} value={nameVal}/>
+            <input {...register('phone', {required: true, minLength: 4})} type={'text'} placeholder='Phone number...' onChange={(e)=>setPhoneVal(e.target.value)} value={phoneVal}/>
+            <input {...register('email')} type={'email'} placeholder='Email...' onChange={(e)=>setEmailVal(e.target.value)} value={emailVal}/>
             <div>Experience: {info.experience.map((el, index)=><Experience exp={el} key={index}/>)}</div>
             <div>Skills: {info.skills.map((el,index)=><Skills skill={el} key={index}/>)}</div>
             <div>Animal: <Animal animal={info.animal}/></div>
-        </div>
+            <button onClick={()=>{
+                setPhoneVal(info.number);
+                setEmailVal(info.email);
+                setNameVal(info.name);
+            }}>Reset</button>
+
+        </form>
     );
 };
 
