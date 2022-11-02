@@ -1,4 +1,4 @@
-1
+// 1
 class PrintMachine{
     #font_size;
     #color;
